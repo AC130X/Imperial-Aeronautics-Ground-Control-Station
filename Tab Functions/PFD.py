@@ -17,31 +17,25 @@ def render():
             # Master Grid inside the card: Splits the card 50/50
             with ui.grid(columns=2).classes('w-full h-full gap-8'):
                 
-                # --------------------------------------------------
-                # LEFT HALF: The Data Labels (Option 2 Grid)
-                # --------------------------------------------------
                 with ui.column().classes('w-full justify-center'):
                     ui.label('System Data').classes('text-lg font-bold mb-2')
                     
                     # The nested grid for your labels
                     with ui.grid(columns=2).classes('w-full gap-4'):
-                        with ui.column().classes('bg-blue-50 p-2 rounded'):
-                            ui.label('Grid Col 1').classes('font-bold text-sm')
-                            ui.label('Speed: 100')
-                        with ui.column().classes('bg-green-50 p-2 rounded'):
-                            ui.label('Grid Col 2').classes('font-bold text-sm')
-                            ui.label('Fuel: 80%')
-                        with ui.column().classes('bg-red-50 p-2 rounded'):
-                            ui.label('Grid Col 3').classes('font-bold text-sm')
-                            ui.label('Errors: 0')
-                        with ui.column().classes('bg-yellow-50 p-2 rounded'):
-                            ui.label('Grid Col 4').classes('font-bold text-sm')
-                            ui.label('Ping: 12ms')
+                        with ui.column().classes(' p-2 rounded'):
+                            ui.label('Battery Voltage')
+                            ui.label('Elapsed Time: 00:00:00')
+                        with ui.column().classes(' p-2 rounded'):
+                            ui.label('Flight Mode:')
+                            ui.label('Mission Status')
+                        with ui.column().classes(' p-2 rounded'):
+                            ui.label('Preflight Status: Done')
+                            ui.label('Arm Status: DISARMED')
+                        with ui.column().classes(' p-2 rounded'):
+                            ui.label('GPS Status:')
+                            ui.label('Connection Status: ')
 
-                # --------------------------------------------------
-                # RIGHT HALF: Buttons and Dropdowns
-                # --------------------------------------------------
-                # 'border-l-2' adds a vertical line, 'pl-8' adds padding so text doesn't touch the line
+
                 with ui.column().classes('w-full border-l-2 pl-8 justify-center'):
                     ui.label('System Controls').classes('text-lg font-bold mb-2')
                     
