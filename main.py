@@ -7,12 +7,12 @@ sys.path.append(r'C:\Users\Vaibhav\Desktop\Files\IA-GCS\Tab Functions')
 
 #importing functions for each tab
 
-import PFD # type: ignore
-import MissionSetup  # type: ignore
-import DataReview # type: ignore
-import SettingsHelp # type: ignore
-import SITL # type: ignore
-import vehiclesetup # type: ignore
+import PFD                              # type: ignore
+import MissionSetup                     # type: ignore
+import DataReview                       # type: ignore
+import SettingsHelp                     # type: ignore
+import SITL                             # type: ignore
+import vehiclesetup                     # type: ignore
 
 #ui.query('body').classes('overflow-hidden') #uncomment to remove scroll bar
 
