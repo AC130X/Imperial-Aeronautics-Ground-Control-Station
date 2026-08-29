@@ -11,7 +11,6 @@ import PFD                              # type: ignore
 import MissionSetup                     # type: ignore
 import DataReview                       # type: ignore
 import SettingsHelp                     # type: ignore
-import SITL                             # type: ignore
 import vehiclesetup                     # type: ignore
 
 #ui.query('body').classes('overflow-hidden') #uncomment to remove scroll bar
@@ -22,7 +21,6 @@ with ui.tabs().classes('w-full') as tabs:
     Mission_Setup_tab = ui.tab('Autonomous Mission Setup')
     Data_Review_tab = ui.tab('Flight Data Review')
     Vehicle_Setup_tab = ui.tab('Vehicle Setup')
-    SITL_tab = ui.tab('SITL')
     Settings_Help_tab = ui.tab('Settings and Help')
 
 #assigning functions to tab
@@ -40,9 +38,6 @@ with ui.tab_panels(tabs, value=PFD_tab).classes('w-full'):#add h-full for removi
     with ui.tab_panel(Vehicle_Setup_tab):
         vehiclesetup.render()
     
-    with ui.tab_panel(SITL_tab):
-        SITL.render()
-
     with ui.tab_panel(Settings_Help_tab):
         SettingsHelp.render()
 
