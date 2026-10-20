@@ -3,7 +3,7 @@ from nicegui import ui
 import sys
 
 
-sys.path.append(r'C:\Users\Vaibhav\Desktop\Files\IA-GCS\Tab Functions')
+sys.path.append(r'C:\Users\Vaibhav\Desktop\Files\Imperial\ICAVY3\IA-GCS\Tab Functions') #you will need to change this to your system path of tab functions
 
 #importing functions for each tab
 
@@ -42,4 +42,4 @@ with ui.tab_panels(tabs, value=PFD_tab).classes('w-full'):#add h-full for removi
         SettingsHelp.render()
 
 #running ui 
-ui.run(native=True, title="Imperial Aeronautics Ground Control Station by Vaibhav Rajesh", window_size=(1920, 1080))
+ui.run(native=True, title="Imperial Aeronautics Ground Control Station", window_size=(1920, 1080))
